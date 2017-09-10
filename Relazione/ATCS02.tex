@@ -84,12 +84,44 @@
 		\item \code{cutOff}: sets the array size under which to perform sequential sorting and it is used to improve the performances of the work stealing scheduler.
 	\end{itemize}
 	The classes that implement the algorithm are \code{Scheduler}, \code{Tasklet} and \code{QuickSort} We then use \code{BatchQuickSortExecutors}, \code{IOFromCSVFile} and \code{Statistics} to efficiently gather and compute data.
+	Details on the analysis performed can be found in \href{analysis}{Section 3}.
 	
-	\subsection{The Scheduler class}
-	\subsection{The Tasklet class}
+	\subsection{\code{Scheduler}}
+	The work stealing scheduler is implemented using the \code{WorkstealingScheduler} class, which implements the \code{Scheduler} interface.
+	The \code{WorkstealingScheduler} class contains a private \code{ServerThread[]} array named \code{servers}. The array represents the number of servers available.
+	\code{ServerThread} is private inner class. 
+	
+	\paragraph {\code{ServerThread}}
+	Each server is represented using a \code{ServerThread}. Each server has the fields:
+	\begin{itemize}
+		\item \code{private int myIndex}: the identifier of the server;
+		\item \code{public ConcurrentLinkedDeque<Tasklet> deque}: each server has a deque to store the tasklets it needs to run. When dealing with its own deque, a server always adds and polls from the bottom of the deque;
+		\item \code{private Stack<Tasklet> stack}: the stack stores the Tasklet the server is currently running.
+	\end{itemize}
+	The \code{ServerThread} class implements \code{Runnable}, and its two most important methods are:
+	\begin{itemize}
+		\item \code{public void run()}: defines the standard behaiour of the server. If the server's deque is void, the server calls the steal method; otherwise it polls the last Tasklet from the bottom of the deque, pushes it into the stack and then executes it;
+		\item \code{public void steal()}:hagving its own deque empty, the server tries stealing Tasklets from the top of someone else's deque. If the steal is successful the server may proceed with the Tasklet execution.
+	\end{itemize} 
+	
+	\subsection{\code{Tasklet}}
+	\code{Tasklet} is an abstarct class designed to recursively perform a task. We mainly use the \code{QSortTasklet} class.
+	
+	\paragraph{\code{QSortTasklet}} This class was designed to recurively perform Quick Sort.Its most notable fields are:
+	\begin{itemize}
+		\item \code{public final int start, end} which are necessary to perform Quick Sort; 
+		\item \code{private ConcurrentLinkedDeque<Tasklet> originDeque} keeping a reference to the deque the Tasklet was piqued from we can add one there one child while we execute the other;
+	\end{itemize}
+	
+	As for its methods, since \code{QSortTasklet} extends \code{RecursiveAction}, it implements \code{compute()}.
+	\begin{itemize}
+		\item \code{public void compute()}: it's the main method of the class. It checks the size of the array or portion of array to sort and it confronts it with \code{cutOff}. If the size exceeds the cutoff we recursively call compute, otherwise we sort the remaining array sequentially. 
+	\end{itemize}
+	
 	\subsection{The QuickSort class}
+	It contains the \code{main} and the methods necessary to perform Quick Sort, \code{public void sequentialSortArray (int[] array, int left, int right)} and \code{public int partition (int arr[], int left, int right))}.
 	
-	\section{Analysis performed}
+	\section{Analysis performed}\label{analysis}
 	\subsection{Results of analysis}
 	
 	\section{Conclusion}	
