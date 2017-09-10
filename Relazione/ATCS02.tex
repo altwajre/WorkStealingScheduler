@@ -1,0 +1,125 @@
+%
+% latex-sample.tex
+%
+% This LaTeX source file provides a template for a typical research paper.
+%
+
+%
+% Use the standard article template.
+%
+\documentclass[twocolumn]{article}
+
+\usepackage{titling}
+
+
+\usepackage{float}
+                   % collegamenti ipertestuali
+
+\usepackage[babel]{csquotes}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{booktabs,tabularx}
+\usepackage{makeidx}
+\usepackage{fixltx2e}
+%\usepackage{hyperref}
+
+
+% The geometry package allows for easy page formatting.
+\usepackage{geometry}
+\geometry{letterpaper}
+
+% Load up special logo commands.
+\usepackage{doc}
+
+% Package for formatting URLs.
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+
+% Packages and definitions for graphics files.
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{stfloats}
+\usepackage{adjustbox} 
+\usepackage[colorlinks, linkcolor = blue, urlcolor = blue]{hyperref}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\usepackage{tabularx,pbox}
+\usepackage{here}
+
+
+%
+% Set the title, author, and date.
+%
+\title{\LARGE \textbf{Titolo appropriato}}
+\author{Anna Bonaldo \and Vassilikì Menarin }
+\date{\small {Email: anna.bonaldo@studenti.unipd.it vassiliki.menarin@studenti.unipd.it }}
+
+\def\code#1{\texttt{#1}}
+
+%
+% The document proper.
+%
+\begin{document}
+	
+	% Add the title section.
+
+	\maketitle
+	
+	\textbf{\textit{Abstarct} - Write something interesting here}
+
+	
+	\section{Introduction}
+	\subsection{Work Staling Scheduler}
+	Work stealing is a scheduling strategy designed to efficiently manage a dynamically multithreaded computation using a fixed number of processors. The work stealing scheduler bounds the number of concurrently active threads within a limit, thus affecting the memory requirements too. This causes an improvement in the execution time and memory usage. Moreover, the scheduler tries to mantain related threads on the same processor, minimizing the communication between different threads.
+	Work stealing differs from work sharing because underutilized processors take the initiative, without relying soley on the scheduler: each processor owns a deque and, when it-s empty, it tries to steal work from others. The number of migrations is lower in work stealing, because it is done only when absolutely necessary.
+	
+	We built a work stealing scheduler that runs a Quick Sort application. We performed some analysis on the results, comparing the clock-time and CPU time for a work stealing and a sequential scheduling, searching for a set of paramentrs that minimizes wall-clock time.
+	
+	\section{Our work}
+	We developed a work-stealing scheduler and a Quick-Sort application using Java 8. The main routine takes three parameters, and we tried assigning different values to them to find a set that minimizes wall-clock time when compared to sequential sorting. These parameters are:
+	\begin{itemize}
+		\item \code{arraySize}: sets the size of the array tp sort;
+		\item \code{numServers}: sets the number of servers;
+		\item \code{cutOff}: sets the array size under which to perform sequential sorting and it is used to improve the performances of the work stealing scheduler.
+	\end{itemize}
+	The classes that implement the algorithm are \code{Scheduler}, \code{Tasklet} and \code{QuickSort} We then use \code{BatchQuickSortExecutors}, \code{IOFromCSVFile} and \code{Statistics} to efficiently gather and compute data.
+	
+	\subsection{The Scheduler class}
+	\subsection{The Tasklet class}
+	\subsection{The QuickSort class}
+	
+	\section{Analysis performed}
+	\subsection{Results of analysis}
+	
+	\section{Conclusion}	
+	%In Figure \ref{fig:program} a simple program code is shown. Figure \ref{fig:taba} describes the cache behaviour with LRU policy. We get a sequence with 5 \textit{MISS} and 4 \textit{HIT}. 
+		
+	%\begin{figure}[!h]
+	%	\centering
+	%	\includegraphics[width=0.5\linewidth]{img/program}
+	%	\caption{A simple program example}				
+	%	\label{fig:program}
+	%\end{figure}
+	
+	%\begin{figure*}[!h]
+	%	\centering
+	%	\includegraphics[width=0.8\linewidth]{img/shared01}
+	%	\caption{Access to shared resources with priority and preemption}
+	%	\label{fig:starve}
+	%\end{figure*}
+		
+		
+		% Generate the bibliography.
+		%\begin{thebibliography}
+		
+		%\bibitem{9} Tembe, Waibhav, James Lowey, and Edward Suh. ``G-SQZ: compact encoding of genomic sequence and quality data." Bioinformatics 26.17 (2010): 2192-2194.	
+		%\bibitem{10} Hach, Faraz, et al. ``SCALCE: boosting sequence compression algorithms using locally consistent encoding." Bioinformatics 28.23 (2012): 3051-3057.
+		%\bibitem{11} Ochoa, Idoia, et al. ``QualComp: a new lossy compressor for quality scores based on rate distortion theory." BMC bioinformatics 14.1 (2013): 187.
+		
+		
+		%\end{thebibliography}
+		%\bibliography{latex-sample}
+		%\bibliographystyle{unsrt}
+	
+\end{document}
