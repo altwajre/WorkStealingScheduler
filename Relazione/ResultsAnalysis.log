@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.16)  10 SEP 2017 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.16)  10 SEP 2017 21:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -63,6 +63,63 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+(c:/texlive/2015/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2015/05/11 v0.4x Insert pages of external PDF documents (AM)
+
+(c:/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(c:/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count89
+\calc@Bcount=\count90
+\calc@Adimen=\dimen105
+\calc@Bdimen=\dimen106
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count91
+\calc@Cskip=\skip45
+)
+(c:/texlive/2015/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/04/20 v2.0e eso-pic (RN)
+
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(c:/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(c:/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+\AM@pagewidth=\dimen107
+\AM@pageheight=\dimen108
+
+(c:/texlive/2015/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2015/05/11 v0.4x Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box28
+\AM@toc@title=\toks17
+\c@AM@survey=\count92
+\AM@templatesizebox=\box29
+)
 (./ResultsAnalysis.aux)
 \openout1 = `ResultsAnalysis.aux'.
 
@@ -81,17 +138,17 @@ LaTeX Font Info:    ... okay on input line 14.
 
 (c:/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count89
-\scratchdimen=\dimen105
-\scratchbox=\box28
-\nofMPsegments=\count90
-\nofMParguments=\count91
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count92
-\MPscratchDim=\dimen106
-\MPnumerator=\count93
-\makeMPintoPDFobject=\count94
-\everyMPtoPDFconversion=\toks18
+\scratchcounter=\count93
+\scratchdimen=\dimen109
+\scratchbox=\box30
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen110
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks19
 ) (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -99,10 +156,6 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -140,6 +193,98 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\AtBeginShipoutBox=\box31
+
+
+pdfTeX warning: pdflatex.exe (file ./imgs/tab01.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<imgs/tab01.pdf, id=1, 614.295pt x 794.97pt>
+File: imgs/tab01.pdf Graphic file (type pdf)
+ <use imgs/tab01.pdf>
+Package pdftex.def Info: imgs/tab01.pdf used on input line 15.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./imgs/tab01.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+File: imgs/tab01.pdf Graphic file (type pdf)
+<use imgs/tab01.pdf>
+Package pdftex.def Info: imgs/tab01.pdf used on input line 15.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./imgs/tab01.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+File: imgs/tab01.pdf Graphic file (type pdf)
+<use imgs/tab01.pdf>
+Package pdftex.def Info: imgs/tab01.pdf used on input line 15.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./imgs/tab01.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./imgs/tab01.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<imgs/tab01.pdf, id=5, page=1, 614.295pt x 794.97pt>
+File: imgs/tab01.pdf Graphic file (type pdf)
+
+<use imgs/tab01.pdf, page 1>
+Package pdftex.def Info: imgs/tab01.pdf, page1 used on input line 15.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: imgs/tab01.pdf Graphic file (type pdf)
+ <use imgs/tab01.pdf, page 1>
+Package pdftex.def Info: imgs/tab01.pdf, page1 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: imgs/tab01.pdf Graphic file (type pdf)
+
+<use imgs/tab01.pdf, page 1>
+Package pdftex.def Info: imgs/tab01.pdf, page1 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: imgs/tab01.pdf Graphic file (type pdf)
+ <use imgs/tab01.pdf, page 1>
+Package pdftex.def Info: imgs/tab01.pdf, page1 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./imgs/tab01.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<imgs/tab01.pdf, id=6, page=2, 614.295pt x 794.97pt>
+File: imgs/tab01.pdf Graphic file (type pdf)
+
+<use imgs/tab01.pdf, page 2>
+Package pdftex.def Info: imgs/tab01.pdf, page2 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: imgs/tab01.pdf Graphic file (type pdf)
+ <use imgs/tab01.pdf, page 2>
+Package pdftex.def Info: imgs/tab01.pdf, page2 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: imgs/tab01.pdf Graphic file (type pdf)
+
+<use imgs/tab01.pdf, page 1>
+Package pdftex.def Info: imgs/tab01.pdf, page1 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [1
+
+{c:/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./imgs/tab01.pd
+f>]
+! Undefined control sequence.
+\@outputdblcol ...}}\@combinedblfloats \@setmarks 
+                                                  \@outputpage \begingroup \...
+l.15 ...d={\thispagestyle{plain}}]{imgs/tab01.pdf}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: imgs/tab01.pdf Graphic file (type pdf)
+<use imgs/tab01.pdf, page 2>
+Package pdftex.def Info: imgs/tab01.pdf, page2 used on input line 15.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [2 <./imgs/tab01.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 16--16
 []\OT1/cmr/bx/n/14.4 Performances op-ti-miza-tion
  []
@@ -151,14 +296,14 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
 
-<imgs/SpeedUP5-20server.png, id=1, 623.32875pt x 377.15906pt>
+<imgs/SpeedUP5-20server.png, id=33, 623.32875pt x 377.15906pt>
 File: imgs/SpeedUP5-20server.png Graphic file (type png)
 
 <use imgs/SpeedUP5-20server.png>
 Package pdftex.def Info: imgs/SpeedUP5-20server.png used on input line 28.
 (pdftex.def)             Requested size: 229.5pt x 138.86182pt.
 
-<imgs/SpeedUp20-30servers.png, id=2, 623.32875pt x 346.29375pt>
+<imgs/SpeedUp20-30servers.png, id=34, 623.32875pt x 346.29375pt>
 File: imgs/SpeedUp20-30servers.png Graphic file (type png)
 
 <use imgs/SpeedUp20-30servers.png>
@@ -168,7 +313,7 @@ Package pdftex.def Info: imgs/SpeedUp20-30servers.png used on input line 37.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imgs/SpeedUp5-30servers.png, id=3, 618.81187pt x 346.29375pt>
+<imgs/SpeedUp5-30servers.png, id=35, 618.81187pt x 346.29375pt>
 File: imgs/SpeedUp5-30servers.png Graphic file (type png)
 
 <use imgs/SpeedUp5-30servers.png>
@@ -179,8 +324,8 @@ Package pdftex.def Info: imgs/SpeedUp5-30servers.png used on input line 44.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png, id=4, 735.49782pt x 480.29437p
-t>
+<imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png, id=36, 735.49782pt x 480.29437
+pt>
 File: imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png Graphic file (type png)
  <use imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png>
 Package pdftex.def Info: imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png used on
@@ -191,8 +336,8 @@ Package pdftex.def Info: imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png used on
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<imgs/SpeedUp20ServerHigherCutoffValuesAnalysis.png, id=5, 735.49782pt x 480.29
-437pt>
+<imgs/SpeedUp20ServerHigherCutoffValuesAnalysis.png, id=37, 735.49782pt x 480.2
+9437pt>
 File: imgs/SpeedUp20ServerHigherCutoffValuesAnalysis.png Graphic file (type png
 )
  <use imgs/SpeedUp20ServerHigherCutoffValuesAnalysis.png>
@@ -204,8 +349,8 @@ d on input line 57.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<imgs/SpeedUpAnalysis20ServersArrayAndCutOffAnalysisLINESGraph.png, id=6, 735.4
-9782pt x 480.29437pt>
+<imgs/SpeedUpAnalysis20ServersArrayAndCutOffAnalysisLINESGraph.png, id=38, 735.
+49782pt x 480.29437pt>
 File: imgs/SpeedUpAnalysis20ServersArrayAndCutOffAnalysisLINESGraph.png Graphic
  file (type png)
 
@@ -218,8 +363,8 @@ ESGraph.png used on input line 64.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<imgs/SpeedUpForDifferentCutOff100-500mila.png, id=7, 735.49782pt x 480.29437pt
->
+<imgs/SpeedUpForDifferentCutOff100-500mila.png, id=39, 735.49782pt x 480.29437p
+t>
 File: imgs/SpeedUpForDifferentCutOff100-500mila.png Graphic file (type png)
  <use imgs/SpeedUpForDifferentCutOff100-500mila.png>
 Package pdftex.def Info: imgs/SpeedUpForDifferentCutOff100-500mila.png used on 
@@ -229,31 +374,29 @@ input line 71.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[1
-
-{c:/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./imgs/SpeedUP5
--20server.png> <./imgs/SpeedUp20-30servers.png> <./imgs/SpeedUp5-30servers.png>
- <./imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png>] [2
+[3 <./imgs/SpeedUP5-20server.png> <./imgs/SpeedUp20-30servers.png> <./imgs/Spee
+dUp5-30servers.png> <./imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png>]
+[4
 
  <./imgs/SpeedUp20ServerHigherCutoffValuesAnalysis.png> <./imgs/SpeedUpAnalysis
 20ServersArrayAndCutOffAnalysisLINESGraph.png> <./imgs/SpeedUpForDifferentCutOf
-f100-500mila.png>]
-(./ResultsAnalysis.aux) ) 
+f100-500mila.png>] (./ResultsAnalysis.aux) ) 
 Here is how much of TeX's memory you used:
- 1581 strings out of 493089
- 23666 string characters out of 6138425
- 82643 words of memory out of 5000000
- 5070 multiletter control sequences out of 15000+600000
+ 2836 strings out of 493089
+ 41535 string characters out of 6138425
+ 108454 words of memory out of 5000000
+ 6295 multiletter control sequences out of 15000+600000
  4245 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,23p,243b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on ResultsAnalysis.pdf (2 pages, 345028 bytes).
+ 40i,18n,46p,250b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2015/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb>
+Output written on ResultsAnalysis.pdf (4 pages, 690294 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
