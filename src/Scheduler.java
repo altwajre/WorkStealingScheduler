@@ -47,25 +47,8 @@ class WorkStealingScheduler implements Scheduler {
                     if (t != null)
                     {
                         stack.push(t);
-                        Thread t1 = new Thread(t);
                         servers[myIndex].stats.numTaskletInitiations++;
-                        t1.start();
-                        try {
-                            t1.join();
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-
-                        if (!t.isLeaf()) {
-                            Tasklet[] children = t.getChildren();
-
-                            if (children[0] != null) {
-                                deque.addLast(children[0]);
-                            }
-                            if (children[1] != null) {
-                                deque.addLast(children[1]);
-                            }
-                        }
+                        t.invoke();
                         stack.pop();
                     }
                 }
@@ -116,30 +99,34 @@ class WorkStealingScheduler implements Scheduler {
     }
 
     public void spawn(Tasklet t) {
-        if (servers[0] != null)
-            servers[0].deque.addLast(t);
+
+        if (servers[0].deque == null) {
+            servers[0].deque = new ConcurrentLinkedDeque<>();
+        }
+        t.addDeque(servers[0].deque);
+        servers[0].deque.addLast(t);
+        //System.out.println(servers[0].deque.size());
+
+        Thread[] pool=new Thread[servers.length];
+        for (int i = 0; i < servers.length; i++) {
+            pool[i] = new Thread(servers[i]);
+            pool[i].start();
+        }
+
+        try {
+            for (int i = 0; i < servers.length; i++) {
+                pool[i].join();
+            }
+        }
+        catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void waitForAll(HashSet<Tasklet> master) {
         if (master.isEmpty())
+        {
             this.shutdown();
-
-        else {
-            Thread[] serverPool=new Thread[servers.length];
-            try
-            {
-                for (int i = 0; i < servers.length; i++) {
-                    serverPool[i] = new Thread(servers[i]);
-                    serverPool[i].start();
-                }
-                for (int i = 0; i < servers.length; i++) {
-                    serverPool[i].join();
-                }
-            }
-            catch (InterruptedException e)
-            {
-                e.printStackTrace();
-            }
         }
     }
 

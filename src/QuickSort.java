@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.ConcurrentLinkedDeque;
 
 /**
  * Created by Anna Bonaldo on 31/08/2017.
@@ -16,7 +17,7 @@ public class QuickSort {
         data = arrayToSort;
         cutOff = seqCutoff;
         HashSet<Tasklet> master = new HashSet<Tasklet>();
-        QSortTasklet t = new QSortTasklet(master, 0, arrayToSort.length-1);
+        QSortTasklet t = new QSortTasklet(master, 0, arrayToSort.length-1, null);
         sched.spawn(t);
         sched.waitForAll(master);
 
@@ -160,13 +161,15 @@ class QSortTasklet extends Tasklet {
 
     public final int start, end;
     private QSortTasklet[] children = null;
+    private ConcurrentLinkedDeque<Tasklet> originDeque;
 
 
-    public QSortTasklet(HashSet<Tasklet> master, int start, int end) {
+    public QSortTasklet(HashSet<Tasklet> master, int start, int end, ConcurrentLinkedDeque<Tasklet> origin) {
         super(master);
         super.master.add(this);
         this.start = start;
         this.end = end;
+        originDeque = origin;
     }
 
     public void EndTasklet()
@@ -174,60 +177,54 @@ class QSortTasklet extends Tasklet {
         this.master.remove(this);
     }
 
-    @Override
-    public Tasklet[] getChildren() {
-        return children;
-    }
-
-    public void run() {
+    public void compute() {
         long tStart = System.nanoTime();
         int[] array = QuickSort.data;
+        children = new QSortTasklet[2];
 
         if ((end - start + 1) > QuickSort.cutOff)
         {
-            doConcurrentStuff(array);
+            int index = QuickSort.partition(array, start, end);
 
+            if (start < index - 1) {
+                QSortTasklet child0 = new QSortTasklet(master, start, index - 1, originDeque);
+                children[0] = child0;
+            }
+            if (index < end) {
+                QSortTasklet child1 = new QSortTasklet(master, index, end, originDeque);
+                children[1] = child1;
+            }
+
+            if (!this.isLeaf()) {
+                if (children[0] != null && children[1] != null) {
+
+                    originDeque.addLast(children[0]);
+
+                    children[1].compute();
+
+                    //System.out.println("tornato da una foglia");
+                } else {
+                    if (children[0] != null)
+                        children[0].compute();
+                    else
+                        children[1].compute();
+                }
+            }
         }
         else
         {
             QuickSort.sequentialSortArray(array, start, end);
         }
-
         EndTasklet();
+    }
 
+    public void addDeque (ConcurrentLinkedDeque<Tasklet> origin) {
+        this.originDeque=origin;
     }
 
     @Override
     public boolean isLeaf() {
-        return (children == null);// || (children[0] == null) || (children[1] == null);
+        return (children[0] == null && children[1] == null);// || (children[0] == null) || (children[1] == null);
     }
 
-    public void doConcurrentStuff(int[] array)
-    {
-        if (start < end) {
-            //System.out.println("start < end");
-            int split_position = QuickSort.partition(array, start, end);
-
-            children = new QSortTasklet[2];
-
-            if (start < split_position - 1) {
-                int start_a = start;
-                int end_a = split_position - 1;
-                //System.out.println("sto per creare figlio con " + start_a + end_a);
-                QSortTasklet a = new QSortTasklet(master, start_a, end_a);
-                children[0] = a;
-
-                //System.out.println("CREATO UN FIGLIO CON START E END " + start_a + end_a);
-            }
-
-           if (end > split_position) {
-                int start_b = split_position;
-                int end_b = end;
-                QSortTasklet b = new QSortTasklet(master, start_b, end_b);
-                children[1] = b;
-                //System.out.println("CREATO UN FIGLIO CON START E END " + start_b + end_b);
-            }
-
-        }
-    }
 } // end class QSortTasklet
