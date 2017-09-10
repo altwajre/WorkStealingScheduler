@@ -1,0 +1,259 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.16)  10 SEP 2017 21:29
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./ResultsAnalysis.tex
+(./ResultsAnalysis.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(c:/texlive/2015/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(c:/texlive/2015/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(c:/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count87
+\float@exts=\toks14
+\float@box=\box26
+\@float@everytoks=\toks15
+\@floatcapt=\box27
+)
+(c:/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(c:/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(c:/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(c:/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(./ResultsAnalysis.aux)
+\openout1 = `ResultsAnalysis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+(c:/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count89
+\scratchdimen=\dimen105
+\scratchbox=\box28
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count92
+\MPscratchDim=\dimen106
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
+\everyMPtoPDFconversion=\toks18
+) (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(c:/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(c:/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(c:/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+[]\OT1/cmr/bx/n/14.4 Performances op-ti-miza-tion
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
+(c:/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+
+<imgs/SpeedUP5-20server.png, id=1, 623.32875pt x 377.15906pt>
+File: imgs/SpeedUP5-20server.png Graphic file (type png)
+
+<use imgs/SpeedUP5-20server.png>
+Package pdftex.def Info: imgs/SpeedUP5-20server.png used on input line 28.
+(pdftex.def)             Requested size: 229.5pt x 138.86182pt.
+
+<imgs/SpeedUp20-30servers.png, id=2, 623.32875pt x 346.29375pt>
+File: imgs/SpeedUp20-30servers.png Graphic file (type png)
+
+<use imgs/SpeedUp20-30servers.png>
+Package pdftex.def Info: imgs/SpeedUp20-30servers.png used on input line 37.
+(pdftex.def)             Requested size: 229.5pt x 127.49788pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imgs/SpeedUp5-30servers.png, id=3, 618.81187pt x 346.29375pt>
+File: imgs/SpeedUp5-30servers.png Graphic file (type png)
+
+<use imgs/SpeedUp5-30servers.png>
+Package pdftex.def Info: imgs/SpeedUp5-30servers.png used on input line 44.
+(pdftex.def)             Requested size: 229.5pt x 128.43315pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png, id=4, 735.49782pt x 480.29437p
+t>
+File: imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png Graphic file (type png)
+ <use imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png>
+Package pdftex.def Info: imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png used on
+ input line 51.
+(pdftex.def)             Requested size: 229.5pt x 149.86443pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<imgs/SpeedUp20ServerHigherCutoffValuesAnalysis.png, id=5, 735.49782pt x 480.29
+437pt>
+File: imgs/SpeedUp20ServerHigherCutoffValuesAnalysis.png Graphic file (type png
+)
+ <use imgs/SpeedUp20ServerHigherCutoffValuesAnalysis.png>
+Package pdftex.def Info: imgs/SpeedUp20ServerHigherCutoffValuesAnalysis.png use
+d on input line 57.
+(pdftex.def)             Requested size: 229.5pt x 149.86443pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<imgs/SpeedUpAnalysis20ServersArrayAndCutOffAnalysisLINESGraph.png, id=6, 735.4
+9782pt x 480.29437pt>
+File: imgs/SpeedUpAnalysis20ServersArrayAndCutOffAnalysisLINESGraph.png Graphic
+ file (type png)
+
+<use imgs/SpeedUpAnalysis20ServersArrayAndCutOffAnalysisLINESGraph.png>
+Package pdftex.def Info: imgs/SpeedUpAnalysis20ServersArrayAndCutOffAnalysisLIN
+ESGraph.png used on input line 64.
+(pdftex.def)             Requested size: 229.5pt x 149.86443pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<imgs/SpeedUpForDifferentCutOff100-500mila.png, id=7, 735.49782pt x 480.29437pt
+>
+File: imgs/SpeedUpForDifferentCutOff100-500mila.png Graphic file (type png)
+ <use imgs/SpeedUpForDifferentCutOff100-500mila.png>
+Package pdftex.def Info: imgs/SpeedUpForDifferentCutOff100-500mila.png used on 
+input line 71.
+(pdftex.def)             Requested size: 229.5pt x 149.86443pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1
+
+{c:/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./imgs/SpeedUP5
+-20server.png> <./imgs/SpeedUp20-30servers.png> <./imgs/SpeedUp5-30servers.png>
+ <./imgs/SpeedUp20ServerArrayAndCutOffAnalysis.png>] [2
+
+ <./imgs/SpeedUp20ServerHigherCutoffValuesAnalysis.png> <./imgs/SpeedUpAnalysis
+20ServersArrayAndCutOffAnalysisLINESGraph.png> <./imgs/SpeedUpForDifferentCutOf
+f100-500mila.png>]
+(./ResultsAnalysis.aux) ) 
+Here is how much of TeX's memory you used:
+ 1581 strings out of 493089
+ 23666 string characters out of 6138425
+ 82643 words of memory out of 5000000
+ 5070 multiletter control sequences out of 15000+600000
+ 4245 words of font info for 16 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 37i,6n,23p,243b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbx12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on ResultsAnalysis.pdf (2 pages, 345028 bytes).
+PDF statistics:
+ 30 PDF objects out of 1000 (max. 8388607)
+ 15 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+
