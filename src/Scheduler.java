@@ -21,9 +21,8 @@ class WorkStealingScheduler implements Scheduler {
 
     private static AtomicBoolean shutdownNow = new AtomicBoolean(false);
     private static ThreadLocal<Integer> serverIndex = new ThreadLocal<Integer>();
-    private  ServerThread[] servers;
-    public schedulerStatistics wSchedulerStats = new schedulerStatistics();
-
+    private        ServerThread[] servers;
+    public         schedulerStatistics wSchedulerStats = new schedulerStatistics();
 
     private class ServerThread implements Runnable {
         private ThreadMXBean threadmxbean = ManagementFactory.getThreadMXBean();
@@ -41,21 +40,22 @@ class WorkStealingScheduler implements Scheduler {
             {
                 if(deque.isEmpty())
                     steal();
-
                 while (!deque.isEmpty()) {
                     Tasklet t = deque.pollLast();
                     if (t != null)
                     {
                         stack.push(t);
-                        servers[myIndex].stats.numTaskletInitiations++;
                         t.invoke();
                         stack.pop();
+                        // servers[myIndex].stats.numTaskletInitiations++;
                     }
                 }
                 shutdownNow.set(checkServers());
             }
             this.stats.CPUtime = threadmxbean.getCurrentThreadCpuTime() - startCpuTimer;
-            this.stats.ClockTime = startClockTimer - startCpuTimer;
+            this.stats.ClockTime =  System.nanoTime()-startClockTimer;
+
+            ;
         } // end run
 
         private boolean checkServers()
@@ -94,7 +94,6 @@ class WorkStealingScheduler implements Scheduler {
         for (int i = 0; i < numServers; i++) {
             servers[i] = new ServerThread(i);
         }
-
         this.wSchedulerStats.numServers = numServers;
     }
 
@@ -105,7 +104,6 @@ class WorkStealingScheduler implements Scheduler {
         }
         t.addDeque(servers[0].deque);
         servers[0].deque.addLast(t);
-        //System.out.println(servers[0].deque.size());
 
         Thread[] pool=new Thread[servers.length];
         for (int i = 0; i < servers.length; i++) {
@@ -158,19 +156,19 @@ class WorkStealingScheduler implements Scheduler {
     public void computeStats() {
 
         int totalSteals = 0;
-        int totalInitiations = 0;
+        //int totalInitiations = 0;
         long totalCPUTime = 0;
         long totalClockTime = 0;
         for (int i = 0; i < servers.length; i++) {
             int numSteals = servers[i].stats.numTaskletSteals;
-            int numInitiations = servers[i].stats.numTaskletInitiations;
             totalSteals += numSteals;
-            totalInitiations += numInitiations;
+        //  int numInitiations = servers[i].stats.numTaskletInitiations;
+        //  totalInitiations += numInitiations;
             totalCPUTime += servers[i].stats.CPUtime;
             totalClockTime+= servers[i].stats.ClockTime;
         }
         this.wSchedulerStats.totalSteals = totalSteals;
-        this.wSchedulerStats.totalInit = totalInitiations;
+    //  this.wSchedulerStats.totalInit = totalInitiations;
         this.wSchedulerStats.totalCPUTime = totalCPUTime / (this.wSchedulerStats.numServers*Runtime.getRuntime().availableProcessors());
         this.wSchedulerStats.totalClockTime = totalClockTime / (this.wSchedulerStats.numServers*Runtime.getRuntime().availableProcessors());
     }

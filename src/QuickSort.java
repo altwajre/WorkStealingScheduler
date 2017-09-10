@@ -197,12 +197,8 @@ class QSortTasklet extends Tasklet {
 
             if (!this.isLeaf()) {
                 if (children[0] != null && children[1] != null) {
-
                     originDeque.addLast(children[0]);
-
                     children[1].compute();
-
-                    //System.out.println("tornato da una foglia");
                 } else {
                     if (children[0] != null)
                         children[0].compute();
