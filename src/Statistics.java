@@ -19,13 +19,10 @@ class schedulerStatistics {
     public long totalCPUTime = 0;
     public long totalClockTime = 0;
     public int  totalSteals = 0;
-    public int  totalInit = 0;
 }
 
 class sequentialStatistics {
 
-    public int numTaskletInitiations = 0;
-    public int numTaskletSteals = 0;
     public long wallClockTime = 0;
     public long CPUtime = 0;
 

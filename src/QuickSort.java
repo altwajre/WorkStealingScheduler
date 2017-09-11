@@ -121,11 +121,10 @@ public class QuickSort {
             sortArray(sched, arrayToSort, seqCutoff);
             long endTime = System.nanoTime();
             sched.shutdown();
-           // sched.printStats();
-            System.out.println("Total execution time: " + (endTime - startTime) );
             sched.computeStats();
             statistics.concStats= sched.wSchedulerStats;
             statistics.concStats.totalClockTime = (endTime - startTime);
+            if(verbose) System.out.println("Total execution time: " + (endTime - startTime) );
 
         }
 
@@ -178,7 +177,6 @@ class QSortTasklet extends Tasklet {
     }
 
     public void compute() {
-        long tStart = System.nanoTime();
         int[] array = QuickSort.data;
         children = new QSortTasklet[2];
 

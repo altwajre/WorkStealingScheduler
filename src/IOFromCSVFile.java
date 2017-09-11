@@ -75,8 +75,6 @@ public class IOFromCSVFile {
         sb.append(DEFAULT_SEPARATOR);
 
         sb.append("Num STEALS"); sb.append(DEFAULT_SEPARATOR);
-        sb.append("Num INIT"); sb.append(DEFAULT_SEPARATOR);
-
         sb.append("Thread CPU"); sb.append(DEFAULT_SEPARATOR);
         sb.append("Thread CLOCK"); sb.append(DEFAULT_SEPARATOR);
 
@@ -101,8 +99,6 @@ public class IOFromCSVFile {
 
         //"Num STEALS"
         sb.append(lineStats.concStats.totalSteals); sb.append(DEFAULT_SEPARATOR);
-        //"Num INIT"
-        sb.append(lineStats.concStats.totalInit); sb.append(DEFAULT_SEPARATOR);
 
         //"TOTAL CPU TIME"
         sb.append(lineStats.concStats.totalCPUTime); sb.append(DEFAULT_SEPARATOR);

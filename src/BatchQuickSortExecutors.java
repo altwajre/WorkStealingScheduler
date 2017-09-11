@@ -15,6 +15,5 @@ public class BatchQuickSortExecutors {
             output.add(QuickSort.quicksort(input.get(i)));
         }
         IOFromCSVFile.writeOutput(output);
-
     }
 }

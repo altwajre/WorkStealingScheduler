@@ -2,15 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e81bb409-5e56-405f-b0f5-15d721d1bb46" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSVFiles/RESULTS/CutOffAnalysisForArraysizeOf1-5billion.xlsx" afterPath="$PROJECT_DIR$/CSVFiles/RESULTS/CutOffAnalysisForArraysizeOf1-5billion.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSVFiles/RESULTS/DataCutOff.xlsx" afterPath="$PROJECT_DIR$/CSVFiles/RESULTS/DataCutOff.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Relazione/ResultsAnalysis.pdf" afterPath="$PROJECT_DIR$/Relazione/ResultsAnalysis.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Relazione/ResultsAnalysis.synctex.gz" afterPath="$PROJECT_DIR$/Relazione/ResultsAnalysis.synctex.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/BatchQuickSortExecutors.class" afterPath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/BatchQuickSortExecutors.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/IOFromCSVFile.class" afterPath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/IOFromCSVFile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/QSortTasklet.class" afterPath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/QSortTasklet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/QuickSort.class" afterPath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/QuickSort.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/WorkStealingScheduler$ServerThread.class" afterPath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/WorkStealingScheduler$ServerThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/WorkStealingScheduler.class" afterPath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/WorkStealingScheduler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/schedulerStatistics.class" afterPath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/schedulerStatistics.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/sequentialStatistics.class" afterPath="$PROJECT_DIR$/out/production/QuickSort_WorkStealingScheduler/sequentialStatistics.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSVFiles/inputData.csv" afterPath="$PROJECT_DIR$/CSVFiles/inputData.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSVFiles/outputData.csv" afterPath="$PROJECT_DIR$/CSVFiles/outputData.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Relazione/ResultsAnalysis.aux" afterPath="$PROJECT_DIR$/Relazione/ResultsAnalysis.aux" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Relazione/ResultsAnalysis.log" afterPath="$PROJECT_DIR$/Relazione/ResultsAnalysis.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Relazione/ResultsAnalysis.tex" afterPath="$PROJECT_DIR$/Relazione/ResultsAnalysis.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BatchQuickSortExecutors.java" afterPath="$PROJECT_DIR$/src/BatchQuickSortExecutors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IOFromCSVFile.java" afterPath="$PROJECT_DIR$/src/IOFromCSVFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/QuickSort.java" afterPath="$PROJECT_DIR$/src/QuickSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scheduler.java" afterPath="$PROJECT_DIR$/src/Scheduler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Statistics.java" afterPath="$PROJECT_DIR$/src/Statistics.java" />
     </list>
     <ignored path="QuickSort_WorkStealingScheduler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,58 +45,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QuickSort.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/QuickSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="129" column="9" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#partition#0;class#QuickSort#0" expanded="false" />
-                <element signature="method#sequentialSortArray#0;class#QuickSort#0" expanded="false" />
-                <element signature="method#clear#0;class#QuickSort#0" expanded="false" />
-                <element signature="method#compute#0;class#QSortTasklet#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scheduler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scheduler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="55" column="22" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#checkServers#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
-                <element signature="method#steal#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
-                <element signature="method#WorkStealingScheduler#0;class#WorkStealingScheduler#0" expanded="false" />
-                <element signature="method#spawn#0;class#WorkStealingScheduler#0" expanded="false" />
-                <element signature="method#waitForAll#0;class#WorkStealingScheduler#0" expanded="false" />
-                <element signature="method#executeSequential#0;class#WorkStealingScheduler#0" expanded="false" />
-                <element signature="method#printStats#0;class#WorkStealingScheduler#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tasklet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tasklet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BatchQuickSortExecutors.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BatchQuickSortExecutors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            <state relative-caret-position="176">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#BatchQuickSortExecutors#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -97,8 +61,8 @@
       <file leaf-file-name="IOFromCSVFile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IOFromCSVFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1694">
-              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#readInput#0;class#IOFromCSVFile#0" expanded="false" />
@@ -112,13 +76,29 @@
       <file leaf-file-name="Statistics.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Statistics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-              <folding>
-                <element signature="class#serverStatistics#0" expanded="false" />
-                <element signature="class#schedulerStatistics#0" expanded="false" />
-                <element signature="class#sequentialStatistics#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="88">
+              <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="outputData.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSVFiles/outputData.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inputData.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSVFiles/inputData.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -181,14 +161,14 @@
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/CSVReader.java" />
-        <option value="$PROJECT_DIR$/src/BatchQuickSortExecutors.java" />
-        <option value="$PROJECT_DIR$/CSVFiles/inputData.csv" />
         <option value="$PROJECT_DIR$/src/WorkStealingScheduler.java" />
-        <option value="$PROJECT_DIR$/src/IOFromCSVFile.java" />
-        <option value="$PROJECT_DIR$/src/Statistics.java" />
         <option value="$PROJECT_DIR$/src/Tasklet.java" />
         <option value="$PROJECT_DIR$/src/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/Scheduler.java" />
+        <option value="$PROJECT_DIR$/src/BatchQuickSortExecutors.java" />
+        <option value="$PROJECT_DIR$/src/IOFromCSVFile.java" />
+        <option value="$PROJECT_DIR$/src/Statistics.java" />
+        <option value="$PROJECT_DIR$/CSVFiles/inputData.csv" />
       </list>
     </option>
   </component>
@@ -228,11 +208,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkStealingScheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkStealingScheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkStealingScheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -694,11 +693,12 @@
       <workItem from="1505045156570" duration="1650000" />
       <workItem from="1505048126828" duration="1408000" />
       <workItem from="1505050624884" duration="10631000" />
+      <workItem from="1505158545885" duration="462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85164000" />
+    <option name="totallyTimeSpent" value="85626000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -710,7 +710,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -724,9 +724,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252818" sideWeight="0.46875" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19674267" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19667171" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25869894" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2624811" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -785,21 +785,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/src/QuickSort.java</url>
-          <line>180</line>
-          <properties />
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-defaults>
         <breakpoint suspend="THREAD" type="java-line" />
       </breakpoints-defaults>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="68" />
+      <option name="time" value="71" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -814,10 +806,12 @@
           <caret line="136" column="26" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#sortArray#0;class#QuickSort#0" expanded="false" />
             <element signature="method#partition#0;class#QuickSort#0" expanded="false" />
             <element signature="method#sequentialSortArray#0;class#QuickSort#0" expanded="false" />
             <element signature="method#clear#0;class#QuickSort#0" expanded="false" />
             <element signature="method#compute#0;class#QSortTasklet#0" expanded="false" />
+            <element signature="method#isLeaf#0;class#QSortTasklet#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -828,13 +822,13 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#checkServers#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#steal#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
+            <element signature="e#3099#3100#0" expanded="true" />
+            <element signature="e#3145#3146#0" expanded="true" />
             <element signature="method#WorkStealingScheduler#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#spawn#0;class#WorkStealingScheduler#0" expanded="false" />
             <element signature="method#waitForAll#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#executeSequential#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#printStats#0;class#WorkStealingScheduler#0" expanded="false" />
+            <element signature="e#4223#4224#0" expanded="true" />
+            <element signature="e#4260#4261#0" expanded="true" />
+            <element signature="method#computeStats#0;class#WorkStealingScheduler#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -843,7 +837,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-          <folding />
+          <folding>
+            <element signature="e#349#388#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -853,10 +849,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#sortArray#0;class#QuickSort#0" expanded="false" />
             <element signature="method#partition#0;class#QuickSort#0" expanded="false" />
             <element signature="method#sequentialSortArray#0;class#QuickSort#0" expanded="false" />
             <element signature="method#clear#0;class#QuickSort#0" expanded="false" />
             <element signature="method#compute#0;class#QSortTasklet#0" expanded="false" />
+            <element signature="method#isLeaf#0;class#QSortTasklet#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -867,13 +865,13 @@
           <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#checkServers#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#steal#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
+            <element signature="e#3099#3100#0" expanded="true" />
+            <element signature="e#3145#3146#0" expanded="true" />
             <element signature="method#WorkStealingScheduler#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#spawn#0;class#WorkStealingScheduler#0" expanded="false" />
             <element signature="method#waitForAll#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#executeSequential#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#printStats#0;class#WorkStealingScheduler#0" expanded="false" />
+            <element signature="e#4223#4224#0" expanded="true" />
+            <element signature="e#4260#4261#0" expanded="true" />
+            <element signature="method#computeStats#0;class#WorkStealingScheduler#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -882,7 +880,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="e#349#388#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -892,10 +892,12 @@
           <caret line="109" column="73" selection-start-line="109" selection-start-column="14" selection-end-line="109" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#sortArray#0;class#QuickSort#0" expanded="false" />
             <element signature="method#partition#0;class#QuickSort#0" expanded="false" />
             <element signature="method#sequentialSortArray#0;class#QuickSort#0" expanded="false" />
             <element signature="method#clear#0;class#QuickSort#0" expanded="false" />
             <element signature="method#compute#0;class#QSortTasklet#0" expanded="false" />
+            <element signature="method#isLeaf#0;class#QSortTasklet#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,13 +908,13 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#checkServers#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#steal#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
+            <element signature="e#3099#3100#0" expanded="true" />
+            <element signature="e#3145#3146#0" expanded="true" />
             <element signature="method#WorkStealingScheduler#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#spawn#0;class#WorkStealingScheduler#0" expanded="false" />
             <element signature="method#waitForAll#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#executeSequential#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#printStats#0;class#WorkStealingScheduler#0" expanded="false" />
+            <element signature="e#4223#4224#0" expanded="true" />
+            <element signature="e#4260#4261#0" expanded="true" />
+            <element signature="method#computeStats#0;class#WorkStealingScheduler#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -921,7 +923,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="18" />
-          <folding />
+          <folding>
+            <element signature="e#349#388#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -931,10 +935,12 @@
           <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#sortArray#0;class#QuickSort#0" expanded="false" />
             <element signature="method#partition#0;class#QuickSort#0" expanded="false" />
             <element signature="method#sequentialSortArray#0;class#QuickSort#0" expanded="false" />
             <element signature="method#clear#0;class#QuickSort#0" expanded="false" />
             <element signature="method#compute#0;class#QSortTasklet#0" expanded="false" />
+            <element signature="method#isLeaf#0;class#QSortTasklet#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -945,13 +951,13 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#checkServers#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#steal#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
+            <element signature="e#3099#3100#0" expanded="true" />
+            <element signature="e#3145#3146#0" expanded="true" />
             <element signature="method#WorkStealingScheduler#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#spawn#0;class#WorkStealingScheduler#0" expanded="false" />
             <element signature="method#waitForAll#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#executeSequential#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#printStats#0;class#WorkStealingScheduler#0" expanded="false" />
+            <element signature="e#4223#4224#0" expanded="true" />
+            <element signature="e#4260#4261#0" expanded="true" />
+            <element signature="method#computeStats#0;class#WorkStealingScheduler#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -960,7 +966,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#349#388#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -970,10 +978,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#sortArray#0;class#QuickSort#0" expanded="false" />
             <element signature="method#partition#0;class#QuickSort#0" expanded="false" />
             <element signature="method#sequentialSortArray#0;class#QuickSort#0" expanded="false" />
             <element signature="method#clear#0;class#QuickSort#0" expanded="false" />
             <element signature="method#compute#0;class#QSortTasklet#0" expanded="false" />
+            <element signature="method#isLeaf#0;class#QSortTasklet#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -984,13 +994,13 @@
           <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#checkServers#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#steal#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
+            <element signature="e#3099#3100#0" expanded="true" />
+            <element signature="e#3145#3146#0" expanded="true" />
             <element signature="method#WorkStealingScheduler#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#spawn#0;class#WorkStealingScheduler#0" expanded="false" />
             <element signature="method#waitForAll#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#executeSequential#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#printStats#0;class#WorkStealingScheduler#0" expanded="false" />
+            <element signature="e#4223#4224#0" expanded="true" />
+            <element signature="e#4260#4261#0" expanded="true" />
+            <element signature="method#computeStats#0;class#WorkStealingScheduler#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -999,7 +1009,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#349#388#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,49 +1059,78 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/io/FileInputStream.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/ArrayList.java" />
     <entry file="file://$PROJECT_DIR$/../new/QuickSort_WorkStealingScheduler.iml" />
-    <entry file="file://$PROJECT_DIR$/CSVFiles/inputData.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WorkStealingScheduler.java" />
-    <entry file="file://$PROJECT_DIR$/CSVFiles/outputData.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO9B80.tmp/QuickSort.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/7zOA2E4.tmp/QuickSort.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/7zOA650.tmp/QuickSort.java" />
     <entry file="file://$PROJECT_DIR$/../QuickSort.java" />
     <entry file="file://$PROJECT_DIR$/../VIKI/quicksort_workstealingscheduler/src/Scheduler.java" />
     <entry file="file://$PROJECT_DIR$/../VIKI/quicksort_workstealingscheduler/src/QuickSort.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/concurrent/ForkJoinTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="731" column="0" selection-start-line="731" selection-start-column="0" selection-end-line="731" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2127">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3099#3100#0" expanded="true" />
+            <element signature="e#3145#3146#0" expanded="true" />
+            <element signature="method#WorkStealingScheduler#0;class#WorkStealingScheduler#0" expanded="false" />
+            <element signature="method#waitForAll#0;class#WorkStealingScheduler#0" expanded="false" />
+            <element signature="e#4223#4224#0" expanded="true" />
+            <element signature="e#4260#4261#0" expanded="true" />
+            <element signature="method#computeStats#0;class#WorkStealingScheduler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2956">
+          <caret line="178" column="26" selection-start-line="178" selection-start-column="26" selection-end-line="178" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#sortArray#0;class#QuickSort#0" expanded="false" />
+            <element signature="method#partition#0;class#QuickSort#0" expanded="false" />
+            <element signature="method#sequentialSortArray#0;class#QuickSort#0" expanded="false" />
+            <element signature="method#clear#0;class#QuickSort#0" expanded="false" />
+            <element signature="method#compute#0;class#QSortTasklet#0" expanded="false" />
+            <element signature="method#isLeaf#0;class#QSortTasklet#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tasklet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="264">
           <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
-          <folding />
+          <folding>
+            <element signature="e#349#388#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BatchQuickSortExecutors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state relative-caret-position="176">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#BatchQuickSortExecutors#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IOFromCSVFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1694">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#readInput#0;class#IOFromCSVFile#0" expanded="false" />
@@ -1101,54 +1142,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Statistics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="class#serverStatistics#0" expanded="false" />
-            <element signature="class#schedulerStatistics#0" expanded="false" />
-            <element signature="class#sequentialStatistics#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/concurrent/ForkJoinTask.java">
+    <entry file="file://$PROJECT_DIR$/CSVFiles/outputData.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="731" column="0" selection-start-line="731" selection-start-column="0" selection-end-line="731" selection-end-column="0" />
-          <folding>
-            <element signature="method#invoke#0;class#ForkJoinTask#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scheduler.java">
+    <entry file="file://$PROJECT_DIR$/CSVFiles/inputData.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#checkServers#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#steal#0;class#ServerThread#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#WorkStealingScheduler#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#spawn#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#waitForAll#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#executeSequential#0;class#WorkStealingScheduler#0" expanded="false" />
-            <element signature="method#printStats#0;class#WorkStealingScheduler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="129" column="9" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#partition#0;class#QuickSort#0" expanded="false" />
-            <element signature="method#sequentialSortArray#0;class#QuickSort#0" expanded="false" />
-            <element signature="method#clear#0;class#QuickSort#0" expanded="false" />
-            <element signature="method#compute#0;class#QSortTasklet#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

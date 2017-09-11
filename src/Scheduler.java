@@ -26,9 +26,10 @@ class WorkStealingScheduler implements Scheduler {
 
     private class ServerThread implements Runnable {
         private ThreadMXBean threadmxbean = ManagementFactory.getThreadMXBean();
-        private int myIndex = 0;
-        public ConcurrentLinkedDeque<Tasklet> deque = new ConcurrentLinkedDeque<>();
         private Stack<Tasklet> stack = new Stack<>();
+        private int myIndex = 0;
+
+        public  ConcurrentLinkedDeque<Tasklet> deque = new ConcurrentLinkedDeque<>();
         public  final serverStatistics stats = new serverStatistics();
 
         public void run() {
@@ -123,9 +124,7 @@ class WorkStealingScheduler implements Scheduler {
 
     public void waitForAll(HashSet<Tasklet> master) {
         if (master.isEmpty())
-        {
             this.shutdown();
-        }
     }
 
     public void shutdown() {
@@ -156,19 +155,15 @@ class WorkStealingScheduler implements Scheduler {
     public void computeStats() {
 
         int totalSteals = 0;
-        //int totalInitiations = 0;
         long totalCPUTime = 0;
         long totalClockTime = 0;
         for (int i = 0; i < servers.length; i++) {
             int numSteals = servers[i].stats.numTaskletSteals;
             totalSteals += numSteals;
-        //  int numInitiations = servers[i].stats.numTaskletInitiations;
-        //  totalInitiations += numInitiations;
             totalCPUTime += servers[i].stats.CPUtime;
             totalClockTime+= servers[i].stats.ClockTime;
         }
         this.wSchedulerStats.totalSteals = totalSteals;
-    //  this.wSchedulerStats.totalInit = totalInitiations;
         this.wSchedulerStats.totalCPUTime = totalCPUTime / (this.wSchedulerStats.numServers*Runtime.getRuntime().availableProcessors());
         this.wSchedulerStats.totalClockTime = totalClockTime / (this.wSchedulerStats.numServers*Runtime.getRuntime().availableProcessors());
     }
